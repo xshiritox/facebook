@@ -5,45 +5,19 @@
       <select v-model="selectedLanguage">
         <option value="es">Español (España)</option>
         <option value="en">English</option>
-        <option value="fr">Français</option>
       </select>
     </div>
 
     <!-- Main Container -->
     <div class="main-container">
-      <!-- Instagram Logo -->
+      <!-- Facebook Logo -->
       <div class="logo-container">
-        <div class="instagram-logo">
-          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-            <!-- Outer rounded square -->
-            <rect x="4" y="4" width="72" height="72" rx="16" ry="16" stroke="url(#paint0_linear)" stroke-width="4" fill="none"/>
-            <!-- Inner circle -->
-            <circle cx="40" cy="40" r="18" stroke="url(#paint1_linear)" stroke-width="4" fill="none"/>
-            <!-- Camera dot -->
-            <circle cx="58" cy="22" r="4" fill="url(#paint2_linear)"/>
-            <defs>
-              <linearGradient id="paint0_linear" x1="4" y1="40" x2="76" y2="40" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#833AB4"/>
-                <stop offset="0.25" stop-color="#C13584"/>
-                <stop offset="0.5" stop-color="#E1306C"/>
-                <stop offset="0.75" stop-color="#FD1D1D"/>
-                <stop offset="1" stop-color="#F77737"/>
-              </linearGradient>
-              <linearGradient id="paint1_linear" x1="22" y1="40" x2="58" y2="40" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#833AB4"/>
-                <stop offset="0.25" stop-color="#C13584"/>
-                <stop offset="0.5" stop-color="#E1306C"/>
-                <stop offset="0.75" stop-color="#FD1D1D"/>
-                <stop offset="1" stop-color="#F77737"/>
-              </linearGradient>
-              <linearGradient id="paint2_linear" x1="54" y1="22" x2="62" y2="22" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#833AB4"/>
-                <stop offset="0.25" stop-color="#C13584"/>
-                <stop offset="0.5" stop-color="#E1306C"/>
-                <stop offset="0.75" stop-color="#FD1D1D"/>
-                <stop offset="1" stop-color="#F77737"/>
-              </linearGradient>
-            </defs>
+        <div class="facebook-logo">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Facebook logo" role="img">
+            <!-- Blue circular background -->
+            <circle cx="40" cy="40" r="36" fill="#0866FF"/>
+            <!-- White 'f' -->
+            <path fill="#FFFFFF" d="M49 28h-6c-1.657 0-3 1.343-3 3v6h8l-2 8h-6v17h-8V45h-6v-8h6v-6c0-5.523 4.477-10 10-10h7v7z"/>
           </svg>
         </div>
       </div>
@@ -54,7 +28,7 @@
           <input
             type="text"
             v-model="username"
-            :placeholder="'Usuario, correo electrónico o móvil'"
+            :placeholder="'Móvil o correo electrónico'"
             class="form-input"
             required
           />
@@ -183,7 +157,7 @@ const handleCreateAccount = () => {
   margin-bottom: 36px;
 }
 
-.instagram-logo {
+.facebook-logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,7 +301,7 @@ const handleCreateAccount = () => {
   .logo-container {
     margin-bottom: 28px;
   }
-  .instagram-logo svg {
+  .facebook-logo svg {
     width: 96px;
     height: 96px;
     margin-top: 40px;
