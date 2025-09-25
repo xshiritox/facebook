@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Instagram">
+  <defs>
+    <linearGradient id="igGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#833AB4"/>
+      <stop offset="25%" stop-color="#C13584"/>
+      <stop offset="50%" stop-color="#E1306C"/>
+      <stop offset="75%" stop-color="#FD1D1D"/>
+      <stop offset="100%" stop-color="#F77737"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer rounded square -->
+  <rect x="16" y="16" width="224" height="224" rx="48" ry="48" fill="none" stroke="url(#igGradient)" stroke-width="16"/>
+  <!-- Inner lens circle -->
+  <circle cx="128" cy="128" r="56" fill="none" stroke="url(#igGradient)" stroke-width="16"/>
+  <!-- Camera dot -->
+  <circle cx="184" cy="72" r="12" fill="url(#igGradient)"/>
+</svg>
